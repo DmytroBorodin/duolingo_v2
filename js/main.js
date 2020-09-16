@@ -29,11 +29,33 @@ mainBtnsArray.forEach(m_btn => {
 	})
 });
 
+mainBtnsArray.forEach(m_btn => {
+	m_btn.addEventListener('touchstart', () => {
+		m_btn.classList.add('clicked');
+	})
+	m_btn.addEventListener('touchend', () => {
+		let pageToSwitch = +m_btn.getAttribute('page');
+		m_btn.classList.remove('clicked');
+		switchPage(pagesArr[pageToSwitch]);
+	})
+});
+
 iconBtnsArray.forEach(i__btn => {
 	i__btn.addEventListener('mousedown', () => {
 		i__btn.classList.add('clicked');
 	})
 	i__btn.addEventListener('mouseup', () => {
+		let pageToSwitch = +i__btn.getAttribute('page');
+		i__btn.classList.remove('clicked');
+		switchPage(pagesArr[pageToSwitch]);
+	})
+});
+
+iconBtnsArray.forEach(i__btn => {
+	i__btn.addEventListener('touchstart', () => {
+		i__btn.classList.add('clicked');
+	})
+	i__btn.addEventListener('touchend', () => {
 		let pageToSwitch = +i__btn.getAttribute('page');
 		i__btn.classList.remove('clicked');
 		switchPage(pagesArr[pageToSwitch]);
@@ -48,6 +70,15 @@ lastPageBtns.forEach(l_btn => {
 		l_btn.classList.remove('clicked');
 	});
 });
+lastPageBtns.forEach(l_btn => {
+	l_btn.addEventListener('touchstart', () => {
+		l_btn.classList.add('clicked');
+	});
+	l_btn.addEventListener('touchend', () => {
+		l_btn.classList.remove('clicked');
+	});
+});
+
 
 backBtnsArray.forEach(b_btn => {
 	b_btn.addEventListener('click', () => {
