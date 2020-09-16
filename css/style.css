@@ -257,10 +257,16 @@ button:focus, input:focus {
 		border: 3px solid #00bdff;
 		border-radius: 12px;
 	}
+	.main__button.clicked {
+		border: 3px solid rgba(29, 147, 249, 0.35);
+	}
 	.icon__button {
 		border-radius: 25px;
 		border: 3px solid #e0dee0;
 		border-bottom: 6px solid #e0dee0;
+	}
+	.icon__button.clicked {
+		border-bottom: 3px solid #e0dee0;
 	}
 	.page__sub-text {
 		font-size: 18px;
@@ -274,6 +280,9 @@ button:focus, input:focus {
 		border-radius: 10px;
 		border: 3px solid #00bdff;
 	}
+	.p_4 .buttons__block button.clicked {
+		border: 3px solid rgba(29, 147, 249, 0.35);
+	}
 	.back__icon {
 	    width: 27px;
 	}
@@ -282,6 +291,7 @@ button:focus, input:focus {
 	}
 	.p_4 .owl__icon {
 		width: 135px;
+		bottom: 17%;
 	}
 }
 @media screen and (max-width: 578px) {
@@ -308,10 +318,8 @@ button:focus, input:focus {
 		border: 2px solid #00bdff;
 		border-radius: 8px;
 	}
-	.icon__button {
-		border-radius: 15px;
-		border: 3px solid #e0dee0;
-		border-bottom: 6px solid #e0dee0;
+	.main__button.clicked {
+		border: 2px solid rgba(29, 147, 249, 0.35);
 	}
 	.page__sub-text {
 		font-size: 14px;
@@ -324,6 +332,9 @@ button:focus, input:focus {
 	.p_4 .buttons__block button {
 		border-radius: 7px;
 		border: 2px solid #00bdff;
+	}
+	.p_4 .buttons__block button.clicked {
+		border: 2px solid rgba(29, 147, 249, 0.35);
 	}
 	.back__icon {
 	    width: 20px;
